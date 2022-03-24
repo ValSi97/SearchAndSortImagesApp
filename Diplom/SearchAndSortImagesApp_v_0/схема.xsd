@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DatasetPrepareForm" type="DatasetPrepareForm"/>
+	<xs:complexType name="DatasetPrepareForm">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:element name="DatasetPrepareForm" type="DatasetPrepareForm"/>
+	<xs:complexType name="DatasetPrepareForm">
+		<xs:sequence>
+			<xs:element name="components" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="datasetPreparing1" type="DatasetPreparing" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="datasetPreparing1" type="DatasetPreparing" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="DatasetPreparing" type="DatasetPreparing"/>
+	<xs:complexType name="DatasetPreparing">
+		<xs:sequence>
+			<xs:element name="components" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="extMetadataCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="extPhotoSetCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="imagesPathLabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="imagesPathTextBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="loadImageFolderButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="loadImageProgressBar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="loadMetadataFileButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataPathLabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataPathTextBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="origMetadataCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="origPhotoSetCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pictureLoadScreen" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="positionLabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="searchGoogleButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="uploadDataButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="uploadDataProgressBar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="uploadDataTextBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="DatasetPreparing" type="DatasetPreparing"/>
+	<xs:complexType name="DatasetPreparing">
+		<xs:sequence>
+			<xs:element name="accesKey" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="bucketRegion" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="existingBucketName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Преднастройки для AWS S3</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="filesInFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="image_idx" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="ImageExtensions" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="imageName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataList" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataListExt" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToExtImageSet" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToExtMetadata" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToMainFolder" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Bitmap bmp;</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pathToOrigImageSet" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToOrigMetadata" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToRootFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToRootFolderArray" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="s3Client" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="secretKey" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="InsightsMetadata">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Instrumentation">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RootObject">
+				<xs:complexType>
+					<xs:annotation>
+						<xs:documentation>JSON Parser</xs:documentation>
+					</xs:annotation>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Thumbnail">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Value">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="VisuallySimilarImages">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ImageProcessUC" type="ImageProcessUC"/>
+	<xs:complexType name="ImageProcessUC">
+		<xs:sequence>
+			<xs:element name="buildingsFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="changeColorBalanceCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="changeContrastAndBrightnessCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="components" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="createDirectoryButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="createDirectoryProgressBar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="denoiseImageCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="findCoordinatesFormFileButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="flagsFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="loadImageFolderButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="longDistanceFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="monumentsFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="nextImageButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="peopleFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pictureLoadScreen" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="positionLabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="preparationImageButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="prevImageButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="saveImageToFolderButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="textFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="unknownArchitectureFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="unknownFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="unknownTextFolderCheckBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ImageProcessUC" type="ImageProcessUC"/>
+	<xs:complexType name="ImageProcessUC">
+		<xs:sequence>
+			<xs:element name="Address">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Histogram">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="_values" type="xs:long" minOccurs="1" maxOccurs="1"/>
+						<xs:element name="Levels">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="_gamma" type="xs:double" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_inputHigh" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_inputLow" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_outputHigh" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_outputLow" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_inputHigh" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_inputLow" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_outputHigh" type="RGB" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="_outputLow" type="RGB" minOccurs="1" maxOccurs="1"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="RGB">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="B" type="xs:byte" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="G" type="xs:byte" minOccurs="1" maxOccurs="1"/>
+									<xs:element name="R" type="xs:byte" minOccurs="1" maxOccurs="1"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Contry" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Dlya modulya raspredeleniya po papkam</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="filesInFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="image_idx" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="ImageExtensions" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="imageName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="ImageName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="imageNames" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="latitudeList" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Dlya modulya poiska coordinate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="longitudeList" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Neighbourhood" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToBuildingsFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToFlagsFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToLongDistanceFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToMainFolder" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Bitmap bmp;</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pathToMonumentsFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToPeopleFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToTextFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToUknownTextFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToUnknownArchitectureFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToUnknownFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Road" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Subrb" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="InsightsMetadata">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Instrumentation">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RootedObject">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RootObject">
+				<xs:complexType>
+					<xs:annotation>
+						<xs:documentation>JSON Parser</xs:documentation>
+					</xs:annotation>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Thumbnail">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Value">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="VisuallySimilarImages">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MainForm" type="MainForm"/>
+	<xs:complexType name="MainForm">
+		<xs:sequence>
+			<xs:element name="components" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="PreparingDatasetButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="segmentingModuleButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MainForm" type="MainForm"/>
+	<xs:complexType name="MainForm">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:element name="MapSegmenting" type="MapSegmenting"/>
+	<xs:complexType name="MapSegmenting">
+		<xs:sequence>
+			<xs:element name="baseCount" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="baseTmax" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="baseTmin" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataList" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataList_1" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataList_2" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataList_2_1" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataListConst" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataListFullConst" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToMainFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToOrigMetadata" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToRootFolder" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="pathToRootFolderArray" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Tmax" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Tmin" type="xs:int" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MapSegmenting" type="MapSegmenting"/>
+	<xs:complexType name="MapSegmenting">
+		<xs:sequence>
+			<xs:element name="adaptiveSegmentingButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="components" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="drawSegmentsButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="gMapControl" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="loadMetadataFileButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataPathLabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="metadataPathTextBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="minSegmentingButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="splitter1" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="tMaxLabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="tMaxTextBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="tMinlabel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="tMinTextBox" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="uploadDataButton" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Program" type="Program"/>
+	<xs:complexType name="Program">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:element name="SegmentingForm" type="SegmentingForm"/>
+	<xs:complexType name="SegmentingForm">
+		<xs:sequence>
+			<xs:element name="components" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="mapSegmenting1" type="MapSegmenting" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="mapSegmenting1" type="MapSegmenting" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SegmentingForm" type="SegmentingForm"/>
+	<xs:complexType name="SegmentingForm">
+		<xs:sequence/>
+	</xs:complexType>
+</xs:schema>
